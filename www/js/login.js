@@ -42,7 +42,7 @@ function logea() {
 
 		rut = $("#rutPer").val(); 
 		clave = $("#clave").val(); 
-		console.log('login : ' + rut);
+		alert('login : ' + rut);
 		
 		var version = new Version();
 		
@@ -50,7 +50,7 @@ function logea() {
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
 	        if (data!=null) {
-
+					alert(data);
 				  if(data.success == true || data.success == "true" ){
 					  estado = true;
 				  }
