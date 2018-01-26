@@ -47,6 +47,7 @@ function logea() {
 		var version = new Version();
 		
 		var any = new AnywhereManager();
+	alert(any+"fsdihbufsduhybgifsd");
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
 		alert(data);	
