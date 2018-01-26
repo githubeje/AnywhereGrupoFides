@@ -98,7 +98,7 @@
 	<feature name="http://api.phonegap.com/1.0/network"/>
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 	
-	<gap:plugin name="org.apache.cordova.camera" source="npm" />
+	<gap:plugin name="cordova-plugin-camera" source="npm" />
 	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.4.0" source="npm" /> 
     <gap:plugin name="org.apache.cordova.core.geolocation" source="npm" />
     <gap:plugin name="org.apache.cordova.device" source="npm" />
