@@ -49,8 +49,9 @@ function logea() {
 		var any = new AnywhereManager();
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
+		alert(data);	
 	        if (data!=null) {
-					alert(data);
+					
 				  if(data.success == true || data.success == "true" ){
 					  estado = true;
 				  }
@@ -96,9 +97,9 @@ function logea() {
 	        else {
 	        	popup("Mensaje", "Usuario o clave invalido","index.html");
 	        }	
-			alert ("pase por aqui");
+			
 		});
-		
+		alert ("pase por aqui");
 }
 
 $("div[data-role='page']").live('pageshow',function(event, ui){
