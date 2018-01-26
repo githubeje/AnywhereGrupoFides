@@ -99,7 +99,7 @@
 	<feature name="http://api.phonegap.com/1.0/notification"/>
 	
 	<gap:plugin name="cordova-plugin-camera" source="npm" />
-	
+	<gap:plugin name="cordova-plugin-pushplugin" source="npm" /> 
         <gap:plugin name="cordova-plugin-geolocation" source="npm" />
         <gap:plugin name="cordova-plugin-device" source="npm" />
 	<gap:plugin name="cordova-plugin-appversion"  source="npm"  />
