@@ -89,8 +89,8 @@ function Config() {
 		 * html5,WindowLocalStorage
 		 * */
 		
-		return "WindowLocalStorage";
-		//return "html5";
+		//return "WindowLocalStorage";
+		return "html5";
 	}
 }
 
