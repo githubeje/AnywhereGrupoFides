@@ -95,7 +95,8 @@ function logea() {
 	        }
 	        else {
 	        	popup("Mensaje", "Usuario o clave invalido","index.html");
-	        }		  
+	        }	
+			alert ("pase por aqui");
 		});
 		
 }
