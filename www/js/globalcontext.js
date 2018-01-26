@@ -26,11 +26,7 @@ function Anywhere() {
 
 	}; 
 	
-	this.getData = function() {
-		var resp = {};
-		alert("estoy aqui");
-		resp["urlWorkflow"] = "http://localhost:8090/alpha/wfanywhere";
-	};
+
 }
 
 
