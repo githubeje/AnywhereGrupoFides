@@ -100,7 +100,7 @@
 	
 	<gap:plugin name="cordova-plugin-camera" source="npm" />
 	
-        <gap:plugin name="org.apache.cordova.core.geolocation" source="npm" />
+        <gap:plugin name="cordova-plugin-geolocation" source="npm" />
         <gap:plugin name="org.apache.cordova.device" source="npm" />
 	<gap:plugin name="net.bgta.phonegap.plugin.appversion" version="1.1.1" source="npm" />
 	
