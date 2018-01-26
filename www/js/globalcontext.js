@@ -8,19 +8,22 @@ function getInstancer() {
 
 function Anywhere() {
 	this.getWSAnywhere_context = function() {
+		alert("estoy aqui 1");
 		//return "http://localhost:8080/wsprogestionchilebi/";
 		return "http://www.anywhere.cl/wsprogestionchilebi/";
 		//return "http://192.168.1.5:8080/wsprogestionchilebi/";
 	};
 
 	this.getWSAnywjere_contextEjeCore = function() {
+		alert("estoy aqui 2");
 		return "http://www.anywhere.cl/wsprogestionchilebi2/";
 		//return "http://localhost:8080/wsprogestionchilebi2/";
 		//return "http://localhost:8090/web/";
 	};
 	
 	this.getAnywhere_context = function() {
-		return "http://www.anywhere.cl/progestionchilebi/";
+		alert("estoy aqui 3");
+		return "http://www.anywhere.cl/wsprogestionchilebi/";
 		//return "http://192.168.1.6:8080/progestionchilebi/";
 		//return "http://localhost:8080/wsprogestionchilebi/";
 
