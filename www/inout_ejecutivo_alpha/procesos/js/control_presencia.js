@@ -43,9 +43,9 @@ $('#principal').bind( 'pagebeforecreate',function(event) {
 											 "disabled2":"no",
 											 "disabled3":"no",
 											 
-											 "getCache1":"no",
-											 "getCache2":"no",
-											 "getCache3":"no",
+											 "getCache1":"yes",
+											 "getCache2":"yes",
+											 "getCache3":"yes",
 											 
 											 "system.producto.class":"required",
 											 "system.producto.class":"required",
