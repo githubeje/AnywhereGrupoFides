@@ -63,7 +63,7 @@ $('#principal').bind( 'pageshow',function(event) {
 
 $(document).on('change','#selectClientes_1000',function(){ 
     	if(any1000 == null) {
-		any1000 = new AnywhereManager();
+		any1000 = new ObjAnyWhereCCL_CP();
     	};
 	alert("despues de esto carga cadenas");
 	any1000.loadCadenas(1000);
