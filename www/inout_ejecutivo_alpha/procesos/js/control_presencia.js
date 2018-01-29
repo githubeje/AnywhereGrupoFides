@@ -62,7 +62,7 @@ $('#principal').bind( 'pageshow',function(event) {
 });
 
 $(document).on('change','#selectClientes_1000',function(){ 
-    alert("Changed!"); 
+    objAnywhere.loadCadenas();
 });
 
 function checkSiYaIngreso(cambiaEstados) {
