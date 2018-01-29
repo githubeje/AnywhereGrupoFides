@@ -59,7 +59,7 @@ $('#quiebrestock_principal').bind( 'pageshow',function(event) {
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://localhost:8080/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
+		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
 		dataType:"json",
 		crossDomain : true,
 		success: function(data,status,jqXHR) {
