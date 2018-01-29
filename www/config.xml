@@ -104,7 +104,7 @@
         <gap:plugin name="cordova-plugin-device" source="npm" />
 	<gap:plugin name="cordova-plugin-appversion"  source="npm"  />
 	
-	<gap:plugin name="cordova-plugin-whitelist" version="1" source="npm"  />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm"  />
     		<allow-intent href="http://*/*" />
     		<allow-intent href="https://*/*" />
 		<allow-navigation href="http://*/*" />
