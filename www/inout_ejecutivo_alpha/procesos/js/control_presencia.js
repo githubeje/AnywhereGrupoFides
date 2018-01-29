@@ -61,7 +61,7 @@ $('#principal').bind( 'pageshow',function(event) {
 	objAnywhere.loadClients();
 });
 
-$(document).on('change','#selectClientes_1000',function(){ 
+$("#selectClientes_1000").on("change", function () {
     	if(any1000 == null) {
 		any1000 = new ObjAnyWhereCCL_CP();
     	};
