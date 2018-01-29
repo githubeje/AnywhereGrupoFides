@@ -271,7 +271,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 					  "<option value='' selected>Escoger Cliente</option>"+
 					  "</select>" +
 	                  "</div></div>";
-			alert(html);
+			
 		}
         
 		if(this.json.omit2 != "yes"  ) {
@@ -437,6 +437,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 						
 						map.add("cliente_"+v.id, strCadenas, function() {
 							$("#selectClientes_"+id).append("<option value='"+v.id+"' >"+v.name+"</option>");	
+							alert("aqui debe pasar algo");
 						});
 						
 						cant=cant+1;
