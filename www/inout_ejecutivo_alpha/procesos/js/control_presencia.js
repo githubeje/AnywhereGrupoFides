@@ -59,6 +59,7 @@ $('#principal').bind( 'pagebeforecreate',function(event) {
 
 $('#principal').bind( 'pageshow',function(event) {
 	objAnywhere.loadClients();
+	alert(objAnywhere.getHtml());
 });
 
 function checkSiYaIngreso(cambiaEstados) {
