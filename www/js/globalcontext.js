@@ -879,7 +879,7 @@ function AnywhereManager() {
 			var params = { "m" : "access" , "c" : "Login" ,rutPer : usuario, clave : clave };
 		*/
 		var vUrl = any.getWSAnywjere_contextEjeCore() + "EjeCoreI";
-		alert("vUrl:"+vUrl);
+		//alert("vUrl:"+vUrl);
 		var params = { "claseweb" : "cl.imasd.view.sencha.anywhere.Conf" ,
 				       "modulo" : "anywhere_movil_restanywhere",
 				       "thing" : "Login",
@@ -897,7 +897,7 @@ function AnywhereManager() {
 			crossDomain : true,
 			cache: false,
 			success: function(data) {
-				alert("data:"+data);
+				//alert("data:"+data);
 				if(funcJavascript != null) {
 					var funcSuccesLocal = eval(funcJavascript);
 					dataReturn = funcSuccesLocal(data);
@@ -908,7 +908,7 @@ function AnywhereManager() {
 				throw new Error("[Globalcontext.callServer.ajaxError]"+error+"  "+vUrl+" "+JSON.stringify(params));
 			}
 		});
-		alert("dataReturn:"+dataReturn);
+		//alert("dataReturn:"+dataReturn);
 		return dataReturn;
 		console.log("[AnywhereManager.login.end]");
 	};
