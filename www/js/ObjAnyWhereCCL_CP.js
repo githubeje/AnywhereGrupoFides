@@ -498,16 +498,18 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		if(numPos==null) {
 			numPos = this.num;
 		}
-		
+		alert("entro aqui?, y con que numpos: "+numPos+" y que num:"+this.num);
 		var any = new AnywhereManager();
 		var json = this.getJson();
  
 		var idCliente = $("#selectClientes_"+numPos+" option:selected").val();
+		alert("y que idcliente tengo="+idCliente);
 		var strCadenas = null;
 		
 		var map = new MapSQL("dataSQL");
 		map.get("cliente_"+idCliente, function(value) {
 			strCadenas = value.data;
+			alert("valuedata entra con algo?"+value.data);
 		});
  
 		if( strCadenas == null || strCadenas == undefined) {
