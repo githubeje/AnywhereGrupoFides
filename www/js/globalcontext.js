@@ -872,6 +872,7 @@ function AnywhereManager() {
 	
 	this.login = function(async, usuario , clave,  funcJavascript) {
 		console.log("[AnywhereManager.login.begin] v.2015.09.2");
+		alert(usuario + " " +clave + "dentro de login de AnywhereManager");
 		
 		/*
 		    var vUrl = any.getWSAnywhere_context() + "dispatcher";
