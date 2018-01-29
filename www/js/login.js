@@ -42,16 +42,15 @@ function logea() {
 
 		rut = $("#rutPer").val(); 
 		clave = $("#clave").val(); 
-		alert('login : ' + rut);
+		alert('clave : ' + clave);
 		
 		var version = new Version();
 		
 		var any = new AnywhereManager();
-	alert(any+"fsdihbufsduhybgifsd");
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
-		alert(data);	
-	        if (data!=null) {
+			alert("lo que sea");	
+	        	if (data!=null) {
 					
 				  if(data.success == true || data.success == "true" ){
 					  estado = true;
