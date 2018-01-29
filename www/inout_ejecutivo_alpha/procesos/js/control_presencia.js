@@ -62,7 +62,10 @@ $('#principal').bind( 'pageshow',function(event) {
 });
 
 $(document).on('change','#selectClientes_1000',function(){ 
-    objAnywhere.loadCadenas();
+    	if(objAnywhere == null) {
+		objAnywhere = new ObjAnyWhereCCL_CP
+    	};
+	objAnywhere.loadCadenas();
 });
 
 function checkSiYaIngreso(cambiaEstados) {
