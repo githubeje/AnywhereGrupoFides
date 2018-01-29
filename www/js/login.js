@@ -48,7 +48,7 @@ function logea() {
 		var any = new AnywhereManager();
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
-			alert("lo que sea");	
+			//alert("lo que sea");	
 	        	if (data!=null) {
 					
 				  if(data.success == true || data.success == "true" ){
@@ -98,7 +98,7 @@ function logea() {
 	        }	
 			
 		});
-		alert ("pase por aqui");
+		//alert ("pase por aqui");
 }
 
 $("div[data-role='page']").live('pageshow',function(event, ui){
