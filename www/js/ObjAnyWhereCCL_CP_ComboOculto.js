@@ -304,7 +304,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		$.ajax({ 
 			type: "GET",
 			dataType:"json",
-			url: "http://localhost:8080/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + idUsuario ,
+			url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + idUsuario ,
 			dataType:"json",
 			crossDomain : true,
 			success: function(data,status,jqXHR) {
@@ -319,7 +319,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 				$.ajax({ 
 					type: "GET",
 					dataType:"json",
-					url: "http://localhost:8080/wsprogestionchilebi/services/p2s/querys/productosquebrados/" + idUsuario + "/" + idCorr[0] + "/" + idCliente[0] + "/" + idCadena[0] + "/" + idLocal[0] ,
+					url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/productosquebrados/" + idUsuario + "/" + idCorr[0] + "/" + idCliente[0] + "/" + idCadena[0] + "/" + idLocal[0] ,
 					dataType:"json",
 					crossDomain : true,
 					success: function(data,status,jqXHR) {
