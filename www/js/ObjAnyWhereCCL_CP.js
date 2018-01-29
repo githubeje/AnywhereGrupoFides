@@ -271,7 +271,6 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 					  "<option value='' selected>Escoger Cliente</option>"+
 					  "</select>" +
 	                  "</div></div>";
-			alert(html);
 		
 			
 		}
@@ -515,8 +514,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		}
 
 		var jsonCadenas = this.parsea(strCadenas);
-		alert("1"+strCadenas);
-		alert("2"+jsonCadenas);
+
 		var cant = 0;
 		var cached = false;
 		
@@ -528,7 +526,6 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		$.each(jsonCadenas , function(k,v) {
 			map.add("cadena_"+v.idcadena, JSON.stringify(v.locales), function() {
 				$("#selectCadenas_"+numPos).append("<option value='"+v.idcadena+"' >"+v.nemo+"</option>");
-				alert("<option value='"+v.idcadena+"' >"+v.nemo+"</option>");
 				cant=cant+1;
 			});
 		});
