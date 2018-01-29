@@ -61,6 +61,10 @@ $('#principal').bind( 'pageshow',function(event) {
 	objAnywhere.loadClients();
 });
 
+$(document).on('change','#selectClientes_1000',function(){ 
+    alert("Changed!"); 
+});
+
 function checkSiYaIngreso(cambiaEstados) {
 	var util = new InOutUtils();
 	util.isInside(function(inside, registro) {
