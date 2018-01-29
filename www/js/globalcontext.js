@@ -897,10 +897,11 @@ function AnywhereManager() {
 			crossDomain : true,
 			cache: false,
 			success: function(data) {
-				//alert("data:"+data);
+				alert("data:"+data);
 				if(funcJavascript != null) {
 					var funcSuccesLocal = eval(funcJavascript);
 					dataReturn = funcSuccesLocal(data);
+					alert("funcSuccesLocal(data):"+funcSuccesLocal(data));
 				}
 			},
 			error: function(error) {
@@ -908,7 +909,7 @@ function AnywhereManager() {
 				throw new Error("[Globalcontext.callServer.ajaxError]"+error+"  "+vUrl+" "+JSON.stringify(params));
 			}
 		});
-		//alert("dataReturn:"+dataReturn);
+		alert("dataReturn:"+dataReturn);
 		return dataReturn;
 		console.log("[AnywhereManager.login.end]");
 	};
