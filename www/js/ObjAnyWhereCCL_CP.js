@@ -272,7 +272,6 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 					  "</select>" +
 	                  "</div></div>";
 			
-			html += "$(document).on('change','#selectClientes_"+this.num+"',function(){ alert('CARGA CADENAS!'); });"
 		
 			
 		}
