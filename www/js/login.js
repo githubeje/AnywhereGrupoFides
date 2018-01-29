@@ -42,8 +42,7 @@ function logea() {
 
 		rut = $("#rutPer").val(); 
 		clave = $("#clave").val(); 
-		alert('clave : ' + clave);
-		
+				
 		var version = new Version();
 		
 		var any = new AnywhereManager();
