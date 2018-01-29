@@ -66,7 +66,7 @@ $('#principal').bind( 'pageshow',function(event) {
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://localhost:8080/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
+		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
 		dataType:"json",
 		crossDomain : true,
 		success: function(data,status,jqXHR) {
@@ -176,7 +176,7 @@ $("#save").live("click",function() {
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://localhost:8080/wsprogestionchilebi/services/p2s/querys/protocoloactual/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
+		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/protocoloactual/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
 		/*sessionStorage.getItem("tmp")*/
 		dataType:"json",
 		crossDomain : true,
