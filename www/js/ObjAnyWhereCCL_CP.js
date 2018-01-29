@@ -498,18 +498,16 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		if(numPos==null) {
 			numPos = this.num;
 		}
-		alert("entro aqui?, y con que numpos: "+numPos+" y que num:"+this.num);
+
 		var any = new AnywhereManager();
 		var json = this.getJson();
  
 		var idCliente = $("#selectClientes_"+numPos+" option:selected").val();
-		alert("y que idcliente tengo="+idCliente);
 		var strCadenas = null;
 		
 		var map = new MapSQL("dataSQL");
 		map.get("cliente_"+idCliente, function(value) {
 			strCadenas = value.data;
-			alert("valuedata entra con algo?"+value.data);
 		});
  
 		if( strCadenas == null || strCadenas == undefined) {
@@ -517,6 +515,8 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		}
 
 		var jsonCadenas = this.parsea(strCadenas);
+		alert("1"+strCadenas);
+		alert("2"+jsonCadenas);
 		var cant = 0;
 		var cached = false;
 		
@@ -1295,6 +1295,8 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		var json = {};
 		try {
 			json = JSON.parse(str);
+			alert("3"+str);
+			alert("4"+json);
 		}
 		catch(e) {
 			
