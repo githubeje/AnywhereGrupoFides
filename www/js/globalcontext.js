@@ -872,7 +872,7 @@ function AnywhereManager() {
 	
 	this.login = function(async, usuario , clave,  funcJavascript) {
 		console.log("[AnywhereManager.login.begin] v.2015.09.2");
-		
+		alert("estoy aqui");		
 		
 		/*
 		    var vUrl = any.getWSAnywhere_context() + "dispatcher";
