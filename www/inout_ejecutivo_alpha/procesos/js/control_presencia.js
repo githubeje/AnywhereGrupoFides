@@ -61,15 +61,6 @@ $('#principal').bind( 'pageshow',function(event) {
 	objAnywhere.loadClients();
 });
 
-$("#selectClientes_1000").on("change", function () {
-    	if(any1000 == null) {
-		any1000 = new ObjAnyWhereCCL_CP();
-    	};
-	alert("despues de esto carga cadenas");
-	any1000.loadCadenas(1000);
-	alert("ya debio cargar cadenas");
-});
-
 function checkSiYaIngreso(cambiaEstados) {
 	var util = new InOutUtils();
 	util.isInside(function(inside, registro) {
