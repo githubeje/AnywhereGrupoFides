@@ -271,6 +271,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 					  "<option value='' selected>Escoger Cliente</option>"+
 					  "</select>" +
 	                  "</div></div>";
+			alert(html);
 		}
         
 		if(this.json.omit2 != "yes"  ) {
