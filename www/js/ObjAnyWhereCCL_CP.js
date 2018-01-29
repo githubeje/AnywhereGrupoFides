@@ -437,7 +437,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 						
 						map.add("cliente_"+v.id, strCadenas, function() {
 							$("#selectClientes_"+id).append("<option value='"+v.id+"' >"+v.name+"</option>");	
-							alert("aqui debe pasar algo");
+							alert("<option value='"+v.id+"' >"+v.name+"</option>");
 						});
 						
 						cant=cant+1;
