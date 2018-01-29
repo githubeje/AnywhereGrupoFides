@@ -146,7 +146,7 @@ $("#save").live("click",function() {
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://localhost:8080/wsprogestionchilebi/services/p2s/querys/protocolo/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
+		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/protocolo/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
 		/*sessionStorage.getItem("tmp")*/
 		dataType:"json",
 		crossDomain : true,
