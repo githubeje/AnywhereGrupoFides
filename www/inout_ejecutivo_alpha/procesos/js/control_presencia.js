@@ -65,7 +65,7 @@ $(document).on('change','#selectClientes_1000',function(){
     	if(objAnywhere == null) {
 		objAnywhere = new ObjAnyWhereCCL_CP
     	};
-	objAnywhere.loadCadenas();
+	objAnywhere.loadCadenas(1000);
 });
 
 function checkSiYaIngreso(cambiaEstados) {
