@@ -259,24 +259,26 @@ function ObjAnyWhereCCL_CP(paramJSON) {
  
 		if(this.json.omit1 != "yes"  ) {
 			html+= 	  "<div class='ui-field-contain ui-body ui-br' data-role='fieldcontain' "+this.json.style1+">" +
-					  "<label for='selectClientes_"+this.num+"' class='ui-select'>"+this.json.getLabel1+":</label>" +
-	                  "<div class='ui-select'>" +
-				/*
-	                   "<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange='(function() { var any = new ObjAnyWhereCCL_CP();  ";
+					"<label for='selectClientes_"+this.num+"' class='ui-select'>"+this.json.getLabel1+":</label>" +
+	                 		"<div class='ui-select'>" +
+						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange='alert("Onchange reconocido");'  >" +
+							"<option value='' selected>Escoger Cliente</option>" +
+						"</select>" +
+	                  		"</div>" +
+				  "</div>";
+				
+			/*
+	                "<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange='(function() { var any = new ObjAnyWhereCCL_CP();  ";
 			
 			if( this.json["cache1"] == "yes" ) {
 				html+= " any.onChangeCliente('"+this.num+"'); ";
 			}
 						
 			html+=	  "   any.loadCadenas('"+this.num+"'); } )();'  >" +
-					  "<option value='' selected>Escoger Cliente</option>"+
-					  "</select>" +
-	                  "</div></div>";
-		*/
-			   "<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange='alert("Onchange reconocido");'  >" +
-					  "<option value='' selected>Escoger Cliente</option>"+
-					  "</select>" +
-	                  "</div></div>";
+				  "<option value='' selected>Escoger Cliente</option>"+
+				  "</select>" +
+	                  	  "</div></div>";
+			*/
 		}
         
 		if(this.json.omit2 != "yes"  ) {
