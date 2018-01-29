@@ -65,7 +65,9 @@ $(document).on('change','#selectClientes_1000',function(){
     	if(objAnywhere == null) {
 		objAnywhere = new ObjAnyWhereCCL_CP
     	};
+	alert("despues de esto carga cadenas");
 	objAnywhere.loadCadenas(1000);
+	alert("ya debio cargar cadenas");
 });
 
 function checkSiYaIngreso(cambiaEstados) {
