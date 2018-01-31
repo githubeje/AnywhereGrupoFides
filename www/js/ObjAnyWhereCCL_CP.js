@@ -263,6 +263,18 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 	                 		"<div class='ui-select'>" +
 						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  " +
 							"onchange=\"(function() { " +
+							"var any = new ObjAnyWhereCCL_CP(); " +
+							"any.loadCadenas('"+this.num+"'); " +
+							"})();\"  >" +
+							"<option value='' selected>Escoger Cliente</option>" +
+						"</select>" +
+	                  		"</div>" +
+				  "</div>";
+				
+			/* 
+			GUSTAVO CON FUNCTION FUNCIONANDO
+			"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  " +
+							"onchange=\"(function() { " +
 							"var popup = new MasterPopup();" +
 							"popup.alertPopup('HOLA', 'ONCHANGE!!!!'); " +
 							"})();\"  >" +
@@ -270,8 +282,9 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 						"</select>" +
 	                  		"</div>" +
 				  "</div>";
-				
-			/*
+			
+			
+			ORIGINAL
 	                "<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange=\"(function() { var any = new ObjAnyWhereCCL_CP();  ";
 			
 			if( this.json["cache1"] == "yes" ) {
