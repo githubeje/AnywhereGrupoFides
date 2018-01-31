@@ -48,9 +48,7 @@ function logea() {
 		var any = new AnywhereManager();
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
-			alert("lo que sea");	
 	        	if (data!=null) {
-				  alert("data en logea:"+JSON.stringify(data, null, 4));
 				  if(data.success == true || data.success == "true" ){
 					  estado = true;
 				  }
@@ -73,7 +71,6 @@ function logea() {
 				if(estado==true){
 					var login = new Login();
 					login.newUsuario(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
-					alert(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
 					
 					func = function() {
 						
@@ -99,7 +96,7 @@ function logea() {
 	        }	
 			
 		});
-		//alert ("pase por aqui");
+	
 }
 
 $("div[data-role='page']").live('pageshow',function(event, ui){
