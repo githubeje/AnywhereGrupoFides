@@ -50,7 +50,7 @@ function logea() {
 			var tmp = "";
 			alert("lo que sea");	
 	        	if (data!=null) {
-				  alert("data en logea:"+JSON.stringify(data, null, 4)));
+				  alert("data en logea:"+JSON.stringify(data, null, 4));
 				  if(data.success == true || data.success == "true" ){
 					  estado = true;
 				  }
