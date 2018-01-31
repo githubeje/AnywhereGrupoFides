@@ -262,26 +262,26 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 					"<label for='selectClientes_"+this.num+"' class='ui-select'>"+this.json.getLabel1+":</label>" +
 	                 		"<div class='ui-select'>" +
 						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  " +
-							"onchange='function() { " +
+							"onchange=\"(function() { " +
 							"var popup = new MasterPopup();" +
 							"popup.alertPopup('HOLA', 'ONCHANGE!!!!'); " +
-							"}'  >" +
+							"})();\"  >" +
 							"<option value='' selected>Escoger Cliente</option>" +
 						"</select>" +
 	                  		"</div>" +
 				  "</div>";
 				
 			/*
-	                "<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange='(function() { var any = new ObjAnyWhereCCL_CP();  ";
+	                "<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange=\"(function() { var any = new ObjAnyWhereCCL_CP();  ";
 			
 			if( this.json["cache1"] == "yes" ) {
 				html+= " any.onChangeCliente('"+this.num+"'); ";
 			}
-						
-			html+=	  "   any.loadCadenas('"+this.num+"'); } )();'  >" +
-				  "<option value='' selected>Escoger Cliente</option>"+
-				  "</select>" +
-	                  	  "</div></div>";
+			
+			html+=	  "   any.loadCadenas('"+this.num+"'); } )();\"  >" +
+					  "<option value='' selected>Escoger Cliente</option>"+
+					  "</select>" +
+	                  "</div></div>";
 			*/
 		}
         
