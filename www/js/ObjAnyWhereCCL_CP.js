@@ -263,6 +263,8 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 	                 		"<div class='ui-select'>" +
 						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  " +
 							"onchange=\"(function() { " +
+							"var popup = new MasterPopup();" +
+							"popup.alertPopup('HOLA', 'ONCHANGE CON ONLOAD!!!!'); " +
 							"var any = new ObjAnyWhereCCL_CP(); " +
 							"any.loadCadenas('"+this.num+"'); " +
 							"})();\"  >" +
