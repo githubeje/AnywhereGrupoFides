@@ -897,7 +897,7 @@ function AnywhereManager() {
 			crossDomain : true,
 			cache: false,
 			success: function(data) {
-				alert("data:"+data);
+				alert("data en ajax de login:"+JSON.stringify(data, null, 4)));
 				if(funcJavascript != null) {
 					var funcSuccesLocal = eval(funcJavascript);
 					dataReturn = funcSuccesLocal(data);
