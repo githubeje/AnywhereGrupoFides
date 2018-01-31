@@ -66,8 +66,7 @@ function logea() {
 				  tmp = data.key;
 				
 				  var func;
-				alert(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
-				alert("estado : "+estado);
+			
 				if(estado==true){
 					var login = new Login();
 					login.newUsuario(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
