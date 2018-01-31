@@ -261,7 +261,11 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 			html+= 	  "<div class='ui-field-contain ui-body ui-br' data-role='fieldcontain' "+this.json.style1+">" +
 					"<label for='selectClientes_"+this.num+"' class='ui-select'>"+this.json.getLabel1+":</label>" +
 	                 		"<div class='ui-select'>" +
-						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange=''  >" +
+						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  " +
+							"onchange='function() { " +
+							"var popup = new MasterPopup();" +
+							"popup.alertPopup('HOLA', 'ONCHANGE!!!!'); " +
+							"}'  >" +
 							"<option value='' selected>Escoger Cliente</option>" +
 						"</select>" +
 	                  		"</div>" +
@@ -1298,8 +1302,6 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 		var json = {};
 		try {
 			json = JSON.parse(str);
-			alert("3"+str);
-			alert("4"+json);
 		}
 		catch(e) {
 			
