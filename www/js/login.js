@@ -48,9 +48,9 @@ function logea() {
 		var any = new AnywhereManager();
 		any.login(true, rut, clave, function(data,status,jqXHR) {		
 			var tmp = "";
-			//alert("lo que sea");	
+			alert("lo que sea");	
 	        	if (data!=null) {
-					
+				  alert("data en logea:"+JSON.stringify(data, null, 4)));
 				  if(data.success == true || data.success == "true" ){
 					  estado = true;
 				  }
@@ -68,11 +68,12 @@ function logea() {
 				  tmp = data.key;
 				
 				  var func;
-				
+				alert(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
+				alert("estado : "+estado);
 				if(estado==true){
 					var login = new Login();
 					login.newUsuario(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
-					
+					alert(mensaje, rutT, clienteT, clienteT2, cadenaT, localT, cargo, clave, rut, tmp);
 					
 					func = function() {
 						
