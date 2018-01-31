@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="cl.imasd.anywhere.progestionchilebi.fides" version="4.2.65">    
-	<name>Anywhere - Grupo Fides</name>
-	<description>Anywhere - Grupo Fides</description>
+	<name>AGF</name>
+	<description>AGF</description>
 	<author href="https://www.ejedigital.cl" email="soporte@ejedigital.cl">Soporte</author>
 	
 	<access origin="http://www.anywhere.cl/wsprogestionchilebi"/>
