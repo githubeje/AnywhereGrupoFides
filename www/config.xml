@@ -101,7 +101,7 @@
 	<gap:plugin name="cordova-plugin-camera" source="npm" />
 	<gap:plugin name="cordova-plugin-pushplugin" source="npm" /> 
         <gap:plugin name="cordova-plugin-geolocation" source="npm" />
-        <gap:plugin name="cordova-plugin-device" source="npm" />
+        <gap:plugin name="cordova-plugin-device" spec="https://github.com/apache/cordova-plugin-device.git#1.0.0" />
 	<gap:plugin name="cordova-plugin-appversion"  source="npm"  />
 	
 	<gap:plugin name="cordova-plugin-whitelist" source="npm"  />
