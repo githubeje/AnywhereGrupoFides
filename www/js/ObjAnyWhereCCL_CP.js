@@ -261,7 +261,7 @@ function ObjAnyWhereCCL_CP(paramJSON) {
 			html+= 	  "<div class='ui-field-contain ui-body ui-br' data-role='fieldcontain' "+this.json.style1+">" +
 					"<label for='selectClientes_"+this.num+"' class='ui-select'>"+this.json.getLabel1+":</label>" +
 	                 		"<div class='ui-select'>" +
-						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange='alert("Onchange reconocido");'  >" +
+						"<select eje-type='number' class='required' name='selectClientes_"+this.num+"' id='selectClientes_"+this.num+"'  onchange=''  >" +
 							"<option value='' selected>Escoger Cliente</option>" +
 						"</select>" +
 	                  		"</div>" +
