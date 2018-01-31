@@ -8,8 +8,8 @@ function getInstancer() {
 
 function Anywhere() {
 	this.getWSAnywhere_context = function() {
-		//return "http://localhost:8080/wsprogestionchilebi/";
 		return "http://www.anywhere.cl/wsprogestionchilebi/";
+		//return "http://localhost:8080/wsprogestionchilebi/";
 		//return "http://192.168.1.5:8080/wsprogestionchilebi/";
 	};
 
@@ -89,8 +89,8 @@ function Config() {
 		 * html5,WindowLocalStorage
 		 * */
 		
-		//return "WindowLocalStorage";
-		return "html5";
+		return "WindowLocalStorage";
+		//return "html5";
 	}
 }
 
@@ -897,11 +897,9 @@ function AnywhereManager() {
 			crossDomain : true,
 			cache: false,
 			success: function(data) {
-				alert("data en ajax de login:"+JSON.stringify(data, null, 4)));
 				if(funcJavascript != null) {
 					var funcSuccesLocal = eval(funcJavascript);
 					dataReturn = funcSuccesLocal(data);
-					alert("funcSuccesLocal(data):"+funcSuccesLocal(data));
 				}
 			},
 			error: function(error) {
@@ -909,7 +907,6 @@ function AnywhereManager() {
 				throw new Error("[Globalcontext.callServer.ajaxError]"+error+"  "+vUrl+" "+JSON.stringify(params));
 			}
 		});
-		alert("dataReturn:"+dataReturn);
 		return dataReturn;
 		console.log("[AnywhereManager.login.end]");
 	};
