@@ -879,7 +879,7 @@ function AnywhereManager() {
 			var params = { "m" : "access" , "c" : "Login" ,rutPer : usuario, clave : clave };
 		*/
 		var vUrl = any.getWSAnywjere_contextEjeCore() + "EjeCoreI";
-		//alert("vUrl:"+vUrl);
+
 		var params = { "claseweb" : "cl.imasd.view.sencha.anywhere.Conf" ,
 				       "modulo" : "anywhere_movil_restanywhere",
 				       "thing" : "Login",
