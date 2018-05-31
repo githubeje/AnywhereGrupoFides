@@ -1,8 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="cl.imasd.anywhere.progestionchilebi.fides" version="4.2.65">    
-	<name>AGF</name>
-	<description>AGF</description>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="cl.imasd.anywhere.fides.full" version="4.2.66">    
+	<name>Anywhere - Grupo Fides</name>
+	<description>Anywhere - Grupo Fides</description>
 	<author href="https://www.ejedigital.cl" email="soporte@ejedigital.cl">Soporte</author>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1"/>
+	<access uri="http://www.anywhere.cl/fides/ws1"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws2"/>
+	<access uri="http://www.anywhere.cl/fides/ws2"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1/dispatcher"/>
+	<access uri="http://www.anywhere.cl/fides/ws1/dispatcher"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1/services/p2s/querys/perfilacionlogin"/>
+	<access uri="http://www.anywhere.cl/fides/ws1/services/p2s/querys/perfilacionlogin"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1/services/p2s/querys/listadoformulario"/>
+	<access uri="http://www.anywhere.cl/fides/ws1/services/p2s/querys/listadoformulario"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1/services/p2s/querys/camposformulario"/>
+	<access uri="http://www.anywhere.cl/fides/ws1/services/p2s/querys/camposformulario"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1/services"/>
+	<access uri="http://www.anywhere.cl/fides/ws1/services"/>
+	
+	<access origin="http://www.anywhere.cl/fides/ws1"/>
+	<access uri="http://www.anywhere.cl/fides/ws1"/>
 	
 	<access origin="http://www.anywhere.cl/wsprogestionchilebi"/>
 	<access uri="http://www.anywhere.cl/wsprogestionchilebi"/>

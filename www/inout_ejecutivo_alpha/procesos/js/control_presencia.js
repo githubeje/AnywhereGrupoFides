@@ -19,6 +19,8 @@ var pointAddress = null;
 
 var objAnywhere = null;
 
+var nombreModulo = "InOut - Procesos";
+
 var NumeroVisita = [];
 var NumeroTarea = [];
 var NombreTarea = [];
@@ -142,11 +144,11 @@ $("#save").live("click",function() {
 		}
 		
 	});
-	
+	var any = new Anywhere();
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/protocolo/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
+		url: any.getWSAnywhere_context() + "services/p2s/querys/protocolo/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
 		/*sessionStorage.getItem("tmp")*/
 		dataType:"json",
 		crossDomain : true,

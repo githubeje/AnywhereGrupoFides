@@ -63,10 +63,11 @@ $('#principal').bind( 'pagebeforecreate',function(event) {
 
 $('#principal').bind( 'pageshow',function(event) {
 	objAnywhere.loadClients();
+	var any = new Anywhere();
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
+		url: any.getWSAnywhere_context() + "services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
 		dataType:"json",
 		crossDomain : true,
 		success: function(data,status,jqXHR) {
@@ -87,7 +88,7 @@ $('#principal').bind( 'pageshow',function(event) {
 			});
 		}, 
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
-	       alert("error : " + textStatus + "," + errorThrown);
+			console.log("error : " + textStatus + "," + errorThrown);
 	    }
 	});
 });
@@ -172,11 +173,11 @@ $("#save").live("click",function() {
 		}
 		
 	});
-	
+	var any = new Anywhere();
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/protocoloactual/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
+		url: any.getWSAnywhere_context() + "services/p2s/querys/protocoloactual/" + sessionStorage.getItem("rutT") + "/" + objAnywhere.getCliente() + "/" + objAnywhere.getCadena() + "/" + objAnywhere.getLocal() ,
 		/*sessionStorage.getItem("tmp")*/
 		dataType:"json",
 		crossDomain : true,

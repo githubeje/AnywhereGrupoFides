@@ -53,10 +53,11 @@ $('#quiebrestock_principal').bind( 'pagebeforecreate',function(event) {
 $('#quiebrestock_principal').bind( 'pageshow',function(event) {
 	console.log("[pageshow] quiebrestock_promocion.js");
 	objAnywhere.loadClients();
+	var any = new Anywhere();
 	$.ajax({ 
 		type: "GET",
 		dataType:"json",
-		url: "http://www.anywhere.cl/wsprogestionchilebi/services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
+		url: any.getWSAnywhere_context() + "services/p2s/querys/infoultimavisita/" + sessionStorage.getItem("rutT") ,
 		dataType:"json",
 		crossDomain : true,
 		success: function(data,status,jqXHR) {
@@ -77,7 +78,7 @@ $('#quiebrestock_principal').bind( 'pageshow',function(event) {
 			});
 		}, 
 		error: function(XMLHttpRequest, textStatus, errorThrown) {
-	       alert("error : " + textStatus + "," + errorThrown);
+			console.log("error : " + textStatus + "," + errorThrown);
 	    }
 	});
 });

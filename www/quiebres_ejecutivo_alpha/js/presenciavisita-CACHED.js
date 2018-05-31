@@ -28,7 +28,8 @@ $( document ).on( "pagecreate", function() {
         	var rutaFotoExito = objAnywhere.getCliente();
         	rutaFotoExito += "-" + objAnywhere.getCadena();
         	rutaFotoExito += "-" + objAnywhere.getLocal() + ".jpg";
-        	$('#my_image').attr('src','http://www.anywhere.cl/wsprogestionchilebi/images/fotoexito/' + rutaFotoExito);
+        	var any = new Anywhere();
+        	$('#my_image').attr('src',any.getWSAnywhere_context() + 'images/fotoexito/' + rutaFotoExito);
         }
     });
     
